@@ -1,0 +1,31 @@
+body {
+	background: white; margin: 0px; padding-bottom: 8px; font-family:"Times New Roman", serif; font-size: 14pt; word-wrap: break-word; overflow-wrap: break-word;margin: 0px auto; width: 810px; text-align: left;
+}
+
+#layout-content {
+	background: white; border: currentColor; border-image: none; text-align: left; padding-top: 0em; padding-right: 1em; padding-left: 1em; vertical-align: top;
+}
+strong {
+	font-weight: bold;
+}
+h1 {
+	line-height: 1; padding-top: 0.5em; padding-bottom: 0.2em; margin-top: 0.7em; margin-bottom: 0.3em; border-bottom-color: rgb(170, 170, 170); border-bottom-width: 1px; border-bottom-style: solid;
+}
+h2 {
+	line-height: 1; padding-top: 0.5em; padding-bottom: 0.2em; margin-top: 0.7em; margin-bottom: 0.3em; border-bottom-color: rgb(170, 170, 170); border-bottom-width: 1px; border-bottom-style: solid;
+}
+h3 {
+	line-height: 1; padding-top: 0.5em; padding-bottom: 0.2em; margin-top: 0.7em; margin-bottom: 0.3em; border-bottom-color: rgb(170, 170, 170); border-bottom-width: 1px; border-bottom-style: solid;
+}
+h1 {
+	font-size: 165%;
+}
+h2 {
+	padding-top: 0.8em; font-size: 125%;
+}
+h2 + h3 {
+	padding-top: 0.2em;
+}
+h3 {
+	font-size: 110%; border-bottom-color: currentColor; border-bottom-width: medium; border-bottom-style: none;
+}
