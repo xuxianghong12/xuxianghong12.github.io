@@ -29,3 +29,21 @@ h2 + h3 {
 h3 {
 	font-size: 110%; border-bottom-color: currentColor; border-bottom-width: medium; border-bottom-style: none;
 }
+.sort-link { 
+	cursor: pointer; margin-right: 10px; font-weight: normal; text-decoration: underline;
+}
+.active {
+	font-weight: bold;
+}
+.paper {
+    margin: 10px 0;
+}
+.conference {
+    font-style: italic;
+}
+.title {
+    font-size: 100%; font-family:"Palatino", "Times New Roman", serif;
+}
+.author {
+    font-size: 100%;
+}
