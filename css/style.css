@@ -32,6 +32,11 @@ h3 {
 .sort-link { 
 	cursor: pointer; margin-right: 10px; font-weight: normal; text-decoration: underline;
 }
+.sort-link.active {
+    font-weight: 600;
+    text-decoration: none;
+    background-color: #dbeafe;
+}
 .active {
 	font-weight: bold;
 }
@@ -59,4 +64,19 @@ h3 {
     font-size: 0.9em;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5); /* 添加半透明白色下划线 */
     transition: all 0.2s ease; /* 所有属性变化平滑过渡 */
+}
+
+.project-title {
+	font-family: inherit;
+    border-bottom: 2px solid #4299e1;
+    padding-bottom: 3px;
+	/* padding-left: 20px; */
+    margin-top: 10px;
+}
+
+.project-desc {
+	font-family: inherit;
+    color: #4a5568;
+    margin: 4px 0 5px;
+    font-size: 0.95em;
 }
