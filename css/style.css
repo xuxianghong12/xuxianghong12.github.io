@@ -39,11 +39,24 @@ h3 {
     margin: 10px 0;
 }
 .conference {
-    font-style: italic;
+    /* font-style: italic; */
+	font-size: 0.9em; /* 字体调小（相对于父元素的90%） */
+	background-color: royalblue; /* 深色背景 */
+    color: #ffffff; /* 白色文字，确保清晰可见 */
+    padding: 1px 4px; /* 上下2px、左右6px的内边距 */
+    border-radius: 3px; /* 轻微圆角，视觉更友好 */
+    display: inline-block; /* 使背景只包裹文字内容 */
+    margin: 1 2px; /* 与前后内容保持一点间距 */
 }
 .title {
     font-size: 100%; font-family:"Palatino", "Times New Roman", serif;
 }
 .author {
     font-size: 100%;
+}
+.paper-link {
+    color: royalblue;
+    font-size: 0.9em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5); /* 添加半透明白色下划线 */
+    transition: all 0.2s ease; /* 所有属性变化平滑过渡 */
 }
