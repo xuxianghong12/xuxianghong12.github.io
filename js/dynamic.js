@@ -5,7 +5,7 @@ const projectOrder = [
   "ai4db", 
   "plm", 
   "recommendation", 
-  "IR"
+  "IR",
 ];
 
 const projec2title = {
@@ -16,9 +16,9 @@ const projec2title = {
 };
 
 const projectDescriptions = {
-  "ai4db": "Exploring how to integrate AI models (e.g., Pre-trained Language Models, Large Language Models, Learning-To-Rank) into SQL hint recommendation, number of distict values estimation, cardinality estimation, and index recommendation, aiming to reduce SQL execution latency.",
+  "ai4db": "Exploring how to integrate AI models (e.g., Pre-trained Language Models, Large Language Models, Learning-To-Rank) into SQL hint recommendation, number of distict values (NDV) estimation, cardinality estimation, and index recommendation, aiming to reduce SQL execution latency.",
   "plm": "Tuning pre-trained language models (PLMs) for stronger language processing capabilities.",
-  "recommendation": "The research focuses on session-based recommendation, to recommend the next item based a sequence of user interactions.",
+  "recommendation": "The research focuses on session-based recommendation, to predict the next item based on a sequence of user interactions.",
   "IR": "Investigating how to diversify search results by graph-based methods.",
 };
 
