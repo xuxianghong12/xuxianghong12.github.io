@@ -1,5 +1,5 @@
 body {
-	background: white; margin: 0px; padding-bottom: 8px; font-family:"Times New Roman", serif; font-size: 14pt; word-wrap: break-word; overflow-wrap: break-word;margin: 0px auto; width: 810px; text-align: left;
+	background: white; margin: 0px; padding-bottom: 8px; font-family:"Palatino","Times New Roman", serif; font-size: 14pt; word-wrap: break-word; overflow-wrap: break-word;margin: 0px auto; width: 810px; text-align: left;
 }
 
 #layout-content {
@@ -23,6 +23,88 @@ h1 {
 h2 {
 	padding-top: 0.8em; font-size: 125%;
 }
+.link {
+    color: royalblue; /* 使用与论文标题一致的深色系 */
+    text-decoration: none; 
+}
+.link:visited {
+    color: royalblue; /* 确保访问后颜色不变 */
+}
+.link:hover {
+    color: royalblue;
+    text-decoration: underline;
+}
+.link:active {
+    color: royalblue; /* 点击时保持原色 */
+}
+
+.h2-with-icon {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem; /* 图标和文字的间距 */
+}
+.h2-icon {
+    color: black; /* 和链接同色，保持视觉统一 */
+    font-size: 1.5rem; /* 图标大小和标题文字适配 */
+}
+.icon-wrapper {
+    width: 2.3rem;    /* 包围框宽度（可调整，建议和高度一致实现圆形） */
+    height: 2.3rem;   /* 包围框高度 */
+    border-radius: 50%; /* 圆形包围（改为 4px 就是方形圆角，0 是纯方形） */
+    
+    /* 控制包围框的背景和边框 */
+    background-color: white; /* 包围框背景色（浅蓝，和链接色呼应） */
+    border: 1px solid white; /* 可选：包围框边框（加深轮廓） */
+    
+    /* 确保图标在包围框内居中 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.experience-item {
+    border: 1px solid #d9dbe1; /* #e5e7eb 是非常浅的灰色，边框几乎隐形但能区分区域 */
+    
+    padding: 15px; /* 内容与边框的距离 */
+    margin-bottom: 15px; /* 与下一项的间距 */
+    border-radius: 20px; /* 可选：轻微圆角，避免直角生硬感 */
+    font-family: serif;
+}
+.experience-item span {
+    font-size: 1.1rem;
+}
+
+.experience-item p {
+    margin: 5px 0;
+}
+.experience-item .p-title {
+    margin: 8px 0;
+    font-weight: 600; /* 加粗突出 */
+    color: #333; /* 深一点的颜色 */
+}
+
+/* 内容型段落（详细说明） */
+.experience-item .p-content {
+    margin: 5px 0 10px; /* 底部多留点间距 */
+    color: #666; /* 稍浅的颜色 */
+    font-size: 14px; /* 稍小一点 */
+}
+.experience-container{
+display: flex;
+  justify-content: space-between; /* 两端对齐，标题左，日期右 */
+  align-items: center; /* 垂直居中对齐 */
+  width: 100%; /* 确保容器占满可用宽度 */
+}
+
+.experience-container h4 {
+  margin: 0; /* 移除默认margin */
+  font-size: 1.2rem;
+}
+
+.experience-container span {
+  font-size: 1rem;
+}
+
 h2 + h3 {
 	padding-top: 0.2em;
 }
@@ -31,6 +113,10 @@ h3 {
 }
 .sort-link { 
 	cursor: pointer; margin-right: 10px; font-weight: normal; text-decoration: underline;
+}
+.sort-choices {
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 .sort-link.active {
     font-weight: 600;
@@ -43,6 +129,16 @@ h3 {
 .paper {
     margin: 10px 0;
 }
+.paper-title {
+    font-size: 100%; 
+    font-family:"Palatino", "Times New Roman", serif;
+    margin: 1rem 0 0.75rem; /* 上下间距，区分不同论文 */
+}
+.paper-author {
+    margin-top: 3px;
+    margin-bottom: 5px;
+    font-size: 100%;
+}
 .conference {
     /* font-style: italic; */
 	font-size: 0.9em; /* 字体调小（相对于父元素的90%） */
@@ -53,12 +149,6 @@ h3 {
     display: inline-block; /* 使背景只包裹文字内容 */
     margin: 1 2px; /* 与前后内容保持一点间距 */
 }
-.title {
-    font-size: 100%; font-family:"Palatino", "Times New Roman", serif;
-}
-.author {
-    font-size: 100%;
-}
 .paper-link {
     color: royalblue;
     font-size: 0.9em;
@@ -66,7 +156,7 @@ h3 {
     transition: all 0.2s ease; /* 所有属性变化平滑过渡 */
 }
 
-.project-title {
+.topic-title {
 	font-family: inherit;
     border-bottom: 2px solid #4299e1;
     padding-bottom: 3px;
@@ -74,9 +164,19 @@ h3 {
     margin-top: 10px;
 }
 
-.project-desc {
+.topic-desc {
 	font-family: inherit;
     color: #4a5568;
     margin: 4px 0 5px;
     font-size: 0.95em;
+}
+
+/* 页脚：更新时间 */
+.page-footer {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #e5e7eb;
+  color: #6b7280;
+  font-size: 1rem;
+  text-align: right;
 }

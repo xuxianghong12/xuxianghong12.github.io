@@ -1,21 +1,21 @@
 let currentSortLink = null;
 
 
-const projectOrder = [
+const topicOrder = [
   "ai4db", 
   "plm", 
   "recommendation", 
   "IR",
 ];
 
-const projec2title = {
+const topic2title = {
   "ai4db": "Artificial Intelligence for Data Systems",
   "plm": "Pre-trained Language Models",
   "recommendation": "Recommender Systems",
   "IR": "Information Retrieval",
 };
 
-const projectDescriptions = {
+const topicDescriptions = {
   "ai4db": "Exploring how to integrate AI models (e.g., Pre-trained Language Models, Large Language Models, Learning-To-Rank) into SQL hint recommendation, number of distict values (NDV) estimation, cardinality estimation, and index recommendation, aiming to reduce SQL execution latency.",
   "plm": "Tuning pre-trained language models (PLMs) for stronger language processing capabilities.",
   "recommendation": "The research focuses on session-based recommendation, to predict the next item based on a sequence of user interactions.",
@@ -47,18 +47,18 @@ function sortPapers(criteria) {
     });
     items.forEach(item => list.appendChild(item));
 
-  } else if (criteria === 'project') {
+  } else if (criteria === 'topic') {
     const projectGroups = {};
 
     items.forEach(item => {
-      const projectName = item.dataset.project; 
+      const projectName = item.dataset.topic; 
       if (!projectGroups[projectName]) {
         projectGroups[projectName] = [];
       }
       projectGroups[projectName].push(item);
     });
 
-    projectOrder.forEach(projectName => {
+    topicOrder.forEach(projectName => {
       // 只处理存在论文的项目
       if (projectGroups[projectName]) {
         // 按年份降序排序项目内的论文
@@ -70,14 +70,14 @@ function sortPapers(criteria) {
 
         // 创建并添加项目标题
         const projectTitle = document.createElement('h2');
-        projectTitle.className = 'project-title';
-        projectTitle.textContent = projec2title[projectName] || projectName; 
+        projectTitle.className = 'topic-title';
+        projectTitle.textContent = topic2title[projectName] || projectName; 
         list.appendChild(projectTitle);
 
         // 创建并添加项目描述
         const projectDesc = document.createElement('p');
-        projectDesc.className = 'project-desc';
-        projectDesc.textContent = projectDescriptions[projectName];
+        projectDesc.className = 'topic-desc';
+        projectDesc.textContent = topicDescriptions[projectName];
         list.appendChild(projectDesc);
 
         // 创建并添加项目论文列表

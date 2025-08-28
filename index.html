@@ -2,6 +2,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Xianghong Xu</title>
+        <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <LINK href="css/style.css" rel="stylesheet" type="text/css">
     </head>
 
@@ -9,156 +10,188 @@
     <div id="layout-content">
 
         <h1>Xianghong Xu</h1>
-    
-    <p>
-        I currently work at ByteDance, focusing on artificial intelligence for data systems.
 
-        <br>My research experience involves Information Retrieval, Recommender Systems, Pre-trained Language Models, Database, etc.
-    </p>
 
     <p>
-        <A href="mailto:xuxianghong12@qq.com">[Email]</A>
-        <A href="https://scholar.google.com/citations?user=Y659COsAAAAJ&hl"  target="_blank" rel="noopener noreferrer">[Google Scholar]</A>
-        <A href="https://orcid.org/0000-0003-2447-4107" target="_blank" rel="noopener noreferrer">[ORCID]</A>
+        <a class="link" href="mailto:xuxianghong12@qq.com">[Email]</a>
+        <a class="link" href="https://scholar.google.com/citations?user=Y659COsAAAAJ&hl"  target="_blank" rel="noopener noreferrer">[Google Scholar]</a>
+        <a class="link" href="https://orcid.org/0000-0003-2447-4107" target="_blank" rel="noopener noreferrer">[ORCID]</a>
     </p>
 
-    <h2>
+    <h2 class="h2-with-icon">
+        <div class="icon-wrapper">
+            <i class="fa fa-id-card  h2-icon"></i>
+        </div>
+        About
+    </h2>
+    <p>
+        I currently work at Infrastructure System Lab of ByteDance, focusing on artificial intelligence for data systems.
+
+        <br>My research interest and experience involve Information Retrieval (IR), Recommender Systems (RS), Pre-trained Language Models (PLMs), AI for Databases (AI4DB), etc.
+    </p>
+
+
+
+    <h2 class="h2-with-icon">
+        <div class="icon-wrapper">
+            <i class="fa fa-briefcase h2-icon"></i>
+        </div>
         Working Experience
     </h2>
-    <ul>
-        <li>
-            June 2023 - Present, R&D Engineer
-            @ByteDance
-        </li>
-    </ul>
 
-    <h2>
+    <div class="experience-item">
+        <div class="experience-container">
+            <h4>Research Engineer</h4>
+            <span>June 2023 - Present</span>
+        </div>
+        <p class="p-title">Infrastructure System Lab, ByteDance</p>
+        <p class="p-content">Focusing on integrating advanced AI models—including Pre-trained Language Models (PLMs), Large Language Models (LLMs), and Learning-To-Rank (LTR) techniques—into SQL optimization tasks to reduce SQL execution latency. Authored/co-authored 4 papers and contributed to several patent applications.</p>
+    </div>
+
+    <h2 class="h2-with-icon">
+        <div class="icon-wrapper">
+            <i class="fa fa-graduation-cap h2-icon"></i>
+        </div>
         Education
     </h2>
-    <ul>
-        <li>
-            August 2020 - June 2023, Master of Computer Technology, Tsinghua University
-        </li>
-        <li>
-            August 2016 - June 2020, Bachelor of Computer Science and Technology, Xi'an Jiaotong University
-        </li>
-    </ul>
 
-    <h2>
+    <div class="experience-item">
+        <div class="experience-container">
+            <h4>Tsinghua University</h4>
+            <span>August 2020 - June 2023</span>
+        </div>
+        <p class="p-title">Master of Computer Technology</p>
+        <p class="p-content">Specialized in Information Retrieval (IR), Recommender Systems (RS), and Natural Language Processing (NLP). Authored/co-authored 8 papers and contributed to 4 patent applications.</p>
+    </div>
+
+    <div class="experience-item">
+        <div class="experience-container">
+            <h4>Xi'an Jiaotong University</h4>
+            <span>August 2016 - June 2020</span>
+        </div>
+        <p class="p-title">Bachelor of Computer Science and Technology</p>
+    </div>
+
+
+
+    <h2 class="h2-with-icon">
+        <div class="icon-wrapper">
+            <i class="fa fa-book h2-icon"></i>
+        </div>
         Publications 
     </h2>
     <header>
         * indicates equal contributions. 
     </header>
-    <div>
-        <a id="sortByYear" class="sort-link" data-sort="year" onclick="sortPapers('year')">[Sort by year]</a>
-        <a id="sortByAuthor" class="sort-link" data-sort="author" onclick="sortPapers('author')">[Sort by authorship]</a>
-        <a id="sortByProject" class="sort-link" data-sort="project" onclick="sortPapers('project')">[Sort by topic]</a>
+    <div class="sort-choices">
+        <a id="sortByYear" class="sort-link" data-sort="year" onclick="sortPapers('year')">[Order by year]</a>
+        <a id="sortByAuthor" class="sort-link" data-sort="author" onclick="sortPapers('author')">[Order by authorship]</a>
+        <a id="sortByProject" class="sort-link" data-sort="project" onclick="sortPapers('topic')">[Group by topic]</a>
     </div>
     <ol id="paperList">
 
-        <li class="paper" data-year="2025" data-author=4 data-project="ai4db">
-            <div class="title">VIDEX: A Disaggregated and Extensible Virtual Index for the Cloud and AI Era</div>
-            <div class="author">Rong Kang, Shuai Wang, Tieying Zhang, <strong>Xianghong Xu</strong>, Linhui Xu, Zhimin Liang, Lei Zhang, Rui Shi, Jianjun Chen</div>
+        <li class="paper" data-year="2025" data-author=4 data-topic="ai4db">
+            <div class="paper-title">VIDEX: A Disaggregated and Extensible Virtual Index for the Cloud and AI Era</div>
+            <div class="paper-author">Rong Kang, Shuai Wang, Tieying Zhang, <strong>Xianghong Xu</strong>, Linhui Xu, Zhimin Liang, Lei Zhang, Rui Shi, Jianjun Chen</div>
             <div class="conference">VLDB 2025 Demo</div>
             <a href="https://arxiv.org/abs/2503.23776" class="paper-link" target="_blank" rel="noopener noreferrer">
                 [paper]
             </a>
         </li>
 
-        <li class="paper" data-year="2025" data-author=1 data-project="ai4db">
-            <div class="title">PLM4NDV: Minimizing Data Access for Number of Distinct Values Estimation with Pre-trained Language Models</div>
-            <div class="author"><strong>Xianghong Xu</strong>, Xiao He, Tieying Zhang, Lei Zhang, Rui Shi, Jianjun Chen</div>
+        <li class="paper" data-year="2025" data-author=1 data-topic="ai4db">
+            <div class="paper-title">PLM4NDV: Minimizing Data Access for Number of Distinct Values Estimation with Pre-trained Language Models</div>
+            <div class="paper-author"><strong>Xianghong Xu</strong>, Xiao He, Tieying Zhang, Lei Zhang, Rui Shi, Jianjun Chen</div>
             <div class="conference">SIGMOD 2025</div>
             <a href="https://arxiv.org/abs/2504.00608" class="paper-link" target="_blank" rel="noopener noreferrer">
                 [paper]
             </a>
         </li>
 
-        <li class="paper" data-year="2025" data-author=1 data-project="ai4db">
-            <div class="title">AdaNDV: Adaptive Number of Distinct Value Estimation via Learning to Select and Fuse Estimators</div>
-            <div class="author"><strong>Xianghong Xu</strong>, Tieying Zhang, Xiao He, Haoyang Li, Rong Kang, Shuai Wang, Linhui Xu, Zhimin Liang, Shangyu Luo, Lei Zhang, Jianjun Chen</div>
+        <li class="paper" data-year="2025" data-author=1 data-topic="ai4db">
+            <div class="paper-title">AdaNDV: Adaptive Number of Distinct Value Estimation via Learning to Select and Fuse Estimators</div>
+            <div class="paper-author"><strong>Xianghong Xu</strong>, Tieying Zhang, Xiao He, Haoyang Li, Rong Kang, Shuai Wang, Linhui Xu, Zhimin Liang, Shangyu Luo, Lei Zhang, Jianjun Chen</div>
             <div class="conference">VLDB 2025</div>
             <a href="https://arxiv.org/abs/2502.16190" class="paper-link" target="_blank" rel="noopener noreferrer">
                 [paper]
             </a>
         </li>
 
-        <li class="paper" data-year="2023" data-author=1 data-project="ai4db">
-            <div class="title">COOOL: A Learning-To-Rank Approach for SQL Hint Recommendations</div>
-            <div class="author"><strong>Xianghong Xu</strong>, Zhibing Zhao, Tieying Zhang, Rong Kang, Luming Sun, Jianjun Chen</div>
+        <li class="paper" data-year="2023" data-author=1 data-topic="ai4db">
+            <div class="paper-title">COOOL: A Learning-To-Rank Approach for SQL Hint Recommendations</div>
+            <div class="paper-author"><strong>Xianghong Xu</strong>, Zhibing Zhao, Tieying Zhang, Rong Kang, Luming Sun, Jianjun Chen</div>
             <div class="conference">VLDB 2023 Workshop</div>
             <a href="https://arxiv.org/abs/2304.04407" class="paper-link" target="_blank" rel="noopener noreferrer">
                 [paper]
             </a>
         </li>
         
-        <li class="paper" data-year="2023" data-author=2 data-project="plm">
-            <div class="title">Self-supervised Bidirectional Prompt Tuning for Entity-enhanced Pre-trained Language Model</div>
-            <div class="author">Jiaxin Zou, <strong>Xianghong Xu</strong>, Jiawei Hou, Qiang Yan, Hai-Tao Zheng</div>
+        <li class="paper" data-year="2023" data-author=2 data-topic="plm">
+            <div class="paper-title">Self-supervised Bidirectional Prompt Tuning for Entity-enhanced Pre-trained Language Model</div>
+            <div class="paper-author">Jiaxin Zou, <strong>Xianghong Xu</strong>, Jiawei Hou, Qiang Yan, Hai-Tao Zheng</div>
             <div class="conference">IJCNN 2023</div>
             <a href="https://ieeexplore.ieee.org/abstract/document/10192045" class="paper-link" target="_blank" rel="noopener noreferrer">
                 [paper]
             </a>
         </li>
         
-        <li class="paper" data-year="2023" data-author=1.1  data-project="recommendation">
-            <div class="title">Rethinking Temporal Information in Session-Based Recommendation: A Position-Agnostic Approach</div>
-            <div class="author"><strong>Xianghong Xu*</strong>, Kai Ouyang*, Jiaxin Zou, Hai-Tao Zheng, Wenqiang Liu, Dongxiao Huang, Bei Wu</div>
+        <li class="paper" data-year="2023" data-author=1.1  data-topic="recommendation">
+            <div class="paper-title">Rethinking Temporal Information in Session-Based Recommendation: A Position-Agnostic Approach</div>
+            <div class="paper-author"><strong>Xianghong Xu*</strong>, Kai Ouyang*, Jiaxin Zou, Hai-Tao Zheng, Wenqiang Liu, Dongxiao Huang, Bei Wu</div>
             <div class="conference">ECAI 2023</div>
             <a href="https://ebooks.iospress.nl/doi/10.3233/FAIA230592" class="paper-link" target="_blank" rel="noopener noreferrer">
                 [paper]
             </a>
         </li>
 
-        <li class="paper" data-year="2023" data-author=1.2 data-project="recommendation">
-            <div class="title">Mining Interest Trends and Adaptively Assigning Sample Weight for Session-based Recommendation</div>
-            <div class="author">Kai Ouyang*, <strong>Xianghong Xu*</strong>, Miaoxin Chen, Zuotong Xie, Hai-Tao Zheng, Shuangyong Song, Yu Zhao</div>
+        <li class="paper" data-year="2023" data-author=1.2 data-topic="recommendation">
+            <div class="paper-title">Mining Interest Trends and Adaptively Assigning Sample Weight for Session-based Recommendation</div>
+            <div class="paper-author">Kai Ouyang*, <strong>Xianghong Xu*</strong>, Miaoxin Chen, Zuotong Xie, Hai-Tao Zheng, Shuangyong Song, Yu Zhao</div>
             <div class="conference">SIGIR 2023 Short</div>
             <a href="https://dl.acm.org/doi/abs/10.1145/3539618.3592021" class="paper-link" target="_blank" rel="noopener noreferrer">
                 [paper]
             </a>
         </li>
 
-        <li class="paper" data-year="2023" data-author=1.2 data-project="IR">
-            <div class="title">Modeling Global-Local Subtopic Distribution with Hypergraph to Diversify Search Results</div>
-            <div class="author">Kai Ouyang*, <strong>Xianghong Xu*</strong>, Zuotong Xie, Hai-Tao Zheng, Yanxiong Lu</div>
+        <li class="paper" data-year="2023" data-author=1.2 data-topic="IR">
+            <div class="paper-title">Modeling Global-Local Subtopic Distribution with Hypergraph to Diversify Search Results</div>
+            <div class="paper-author">Kai Ouyang*, <strong>Xianghong Xu*</strong>, Zuotong Xie, Hai-Tao Zheng, Yanxiong Lu</div>
             <div class="conference">IJCNN 2023</div>
             <a href="https://ieeexplore.ieee.org/abstract/document/10191529" class="paper-link" target="_blank" rel="noopener noreferrer">
                 [paper]
             </a>
         </li>
 
-        <li class="paper" data-year="2022" data-author=1.2 data-project="recommendation">
-            <div class="title">Social-aware Sparse Attention Network for Session-based Social Recommendation</div>
-            <div class="author">Kai Ouyang*, <strong>Xianghong Xu*</strong>, Chen Tang, Wang Chen, Hai-Tao Zheng</div>
+        <li class="paper" data-year="2022" data-author=1.2 data-topic="recommendation">
+            <div class="paper-title">Social-aware Sparse Attention Network for Session-based Social Recommendation</div>
+            <div class="paper-author">Kai Ouyang*, <strong>Xianghong Xu*</strong>, Chen Tang, Wang Chen, Hai-Tao Zheng</div>
             <div class="conference">EMNLP 2022 Findings</div>
             <a href="https://aclanthology.org/2022.findings-emnlp.159/" class="paper-link" target="_blank" rel="noopener noreferrer">
                 [paper]
             </a>
         </li>
 
-        <li class="paper" data-year="2022" data-author=1.1 data-project="recommendation">
-            <div class="title">Modeling Latent Autocorrelation for Session-based Recommendation</div>
-            <div class="author"><strong>Xianghong Xu*</strong>, Kai Ouyang*, Liuyin Wang, Jiaxin Zou, Yanxiong Lu, Hai-Tao Zheng, Hong-Gee Kim</div>
+        <li class="paper" data-year="2022" data-author=1.1 data-topic="recommendation">
+            <div class="paper-title">Modeling Latent Autocorrelation for Session-based Recommendation</div>
+            <div class="paper-author"><strong>Xianghong Xu*</strong>, Kai Ouyang*, Liuyin Wang, Jiaxin Zou, Yanxiong Lu, Hai-Tao Zheng, Hong-Gee Kim</div>
             <div class="conference">CIKM 2022 Short</div>
             <a href="https://dl.acm.org/doi/abs/10.1145/3511808.3557645" class="paper-link" target="_blank" rel="noopener noreferrer">
                 [paper]
             </a>
         </li>
 
-        <li class="paper" data-year="2022" data-author=1.2 data-project="recommendation">
-            <div class="title">Self-Supervised Dual-Channel Attentive Network for Session-based Social Recommendation</div>
-            <div class="author">Liuyin Wang*, <strong>Xianghong Xu*</strong>, Kai Ouyang, Huanzhong Duan, Yanxiong Lu, Hai-Tao Zheng</div>
+        <li class="paper" data-year="2022" data-author=1.2 data-topic="recommendation">
+            <div class="paper-title">Self-Supervised Dual-Channel Attentive Network for Session-based Social Recommendation</div>
+            <div class="paper-author">Liuyin Wang*, <strong>Xianghong Xu*</strong>, Kai Ouyang, Huanzhong Duan, Yanxiong Lu, Hai-Tao Zheng</div>
             <div class="conference">ICDE 2022</div>
             <a href="https://ieeexplore.ieee.org/abstract/document/9835273" class="paper-link" target="_blank" rel="noopener noreferrer">
                 [paper]
             </a>
         </li>
 
-        <li class="paper" data-year="2022" data-author=1.1 data-project="IR">
-            <div class="title">Diversify Search Results Through Graph Attentive Document Interaction </div>
-            <div class="author"><strong>Xianghong Xu*</strong>, Kai Ouyang*, Yin Zheng, Yanxiong Lu, Hai-Tao Zheng, Hong-Gee Kim</div>
+        <li class="paper" data-year="2022" data-author=1.1 data-topic="IR">
+            <div class="paper-title">Diversify Search Results Through Graph Attentive Document Interaction </div>
+            <div class="paper-author"><strong>Xianghong Xu*</strong>, Kai Ouyang*, Yin Zheng, Yanxiong Lu, Hai-Tao Zheng, Hong-Gee Kim</div>
             <div class="conference">DASFAA 2022</div>
             <a href="https://link.springer.com/chapter/10.1007/978-3-031-00123-9_51" class="paper-link" target="_blank" rel="noopener noreferrer">
                 [paper]
@@ -166,8 +199,12 @@
         </li>
     </ol>
 
+</div>
+</div>
 
-</div></div>
+<footer class="page-footer">
+  <p>Last updated: August 2025</p>
+</footer>
 
 <script src="js/dynamic.js" defer></script>
 </body>
